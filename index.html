@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Confession</title>
+    <style id="AlifChampion">
+        button {
+            display: inline-block;
+            background-color: #fcdb80;
+            padding: 10px;
+            width: 150px;
+            color: black;
+            text-align: center;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 20px
+        }
+    </style>
+</head>
+
+<body
+    style="background-image: url('https://t4.ftcdn.net/jpg/03/51/23/71/360_F_351237160_Mig6uluMcfZXDrKWvWZu86KGhY7zcjKo.jpg'); background-size: cover; text-align:center;">
+    <div>
+        <img src='https://i.pinimg.com/originals/2a/34/c9/2a34c95330d483685437ae5698b12fd9.gif' width="250"
+            height="250">
+        <h1> Will You Marry Me? </h1>
+        <button id="item" onclick=nak() style="font-size: 15px;">Yes, I Do</button><br>
+        <div style="padding-right: 150px;">
+            <button id="btn" onmouseover=taknak() style="font-size: 15px; position: absolute;">No, I'm Sorry</button>
+        </div>
+    </div>
+
+    <script>
+        function nak() {
+            Swal.fire({
+                imageUrl: 'https://media.tenor.com/604bqFxbFTAAAAAi/love.gif',
+                background: 'rgba(241,216,147,1)',
+                text: `YEAYYY!!! IT'S OFFICIAL`
+            });
+        }
+        function taknak() {
+            var i = Math.floor(Math.random() * 300)
+            var j = Math.floor(Math.random() * 600)
+            btn.style.left = i + 'px'
+            btn.style.top = j + 'px'
+        }
+    </script>
+</body>
+
+</html>
